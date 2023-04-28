@@ -5,5 +5,11 @@
     define('PAGES', __DIR__ . '/../application/pages');
     define('MODULES', __DIR__ . '/../application/modules/');
 
-    require_once ENGINE . 'loadpub.php';
+    require_once (ENGINE . 'pub.php');
+
+    use Pub\Pub;
+    $pub = new Pub();
+
+    $page_path = $pub->getPath();
+    $pub->findPage($page_path);
 ?>
