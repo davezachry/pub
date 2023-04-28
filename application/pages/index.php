@@ -1,5 +1,5 @@
 <?
-    $layout = 'standard';
+    $layout = 'home';
     $data = [
         'metadata' => [
             'meta_title' => 'Meta Title',
@@ -8,8 +8,7 @@
         ],
         'content' => [
             'title' => 'Home Title',
-            'body' => '',
-            'module' => 'Suspendisse potenti. Donec tempor odio vitae urna lobortis aliquet. Donec ut rhoncus risus, eget consequat tellus. Vivamus nec lacinia turpis. Morbi iaculis lectus quis tempus condimentum. Duis pretium pretium dui, vitae sodales nibh sodales nec. Vestibulum non nisi a elit pharetra accumsan. Fusce feugiat massa sit amet molestie suscipit. Nulla facilisi.'
+            'body' => ''
         ]
     ];
 ?>
