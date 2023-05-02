@@ -10,6 +10,5 @@
     use Pub\Pub;
     $pub = new Pub();
 
-    $page_path = $pub->getPath();
-    $pub->findPage($page_path);
+    $pub->findPage($_SERVER['REQUEST_URI']);
 ?>

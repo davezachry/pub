@@ -8,14 +8,6 @@
     <meta name="description" content="<? echo $metadata['meta_description']; ?>">
 </head>
 <body>
-    <header>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
-    </header>
-    <!-- HEADER -->
     <? echo $layout; ?>
-    <!-- FOOTER -->
-    <footer>Copyright 2022</footer>
 </body>
 </html>

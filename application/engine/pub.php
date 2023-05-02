@@ -5,48 +5,40 @@
         /* PROPERTIES */
         private $home_page;
         private $fourohfour_page;
-        private $template_base;
 
         /* INITIALIZATION */
         function __construct() {
-            $this->home_page = PAGES . '/index.php';
-            $this->fourohfour_page = PAGES . '/fourohfour.php';
-            $this->template_base = TEMPLATES . 'base.php';
+            $this->home_page = PAGES . '/index.json';
+            $this->fourohfour_page = PAGES . '/fourohfour.json';
         }
 
         /* METHODS */
-        function getPath() {
-            if (isset($_GET["page_path"])) {
-                return htmlspecialchars($_GET["page_path"]);
-            } else {
-                return '';
-            }
-        }
-
         function findPage($page_path) {
-            if ($page_path == '') {
-                include $this->home_page;
+            if ($page_path == '/') {
+                $json_path = $this->home_page;
             } else {
-                if (file_exists(PAGES . $page_path . '/index.php')) {
-                    include PAGES . $page_path . '/index.php';
+                if (file_exists(PAGES . $page_path . '/index.json')) {
+                    $json_path = PAGES . $page_path . '/index.json';
                 } else {
-                    if (file_exists(PAGES . $page_path . '.php')) {
-                        include PAGES . $page_path . '.php';
+                    if (file_exists(PAGES . $page_path . '.json')) {
+                        $json_path = PAGES . $page_path . '.json';
                     } else {
                         http_response_code(404);
-                        include $this->fourohfour_page;
+                        $json_path = $this->fourohfour_page;
                     }
                 }
             }
-            $this->renderPage($layout, $data);
+            $json_string = file_get_contents($json_path);
+            $json_data = json_decode($json_string, true);
+            $this->renderPage(
+                $json_data['data'],
+                (isset($json_data['layout'])) ? ($json_data['layout']) : ('standard'),
+                (isset($json_data['template'])) ? ($json_data['template']) : ('base')
+            );
         }
 
-        function renderPage($layout, $data, $template = '') {
-            if ($template == '') {
-                $template = $this->template_base;
-            } else {
-                $template = TEMPLATES . $template . '.php';
-            }
+        function renderPage($data, $layout, $template) {
+            $template = TEMPLATES . $template . '.php';
             $rendered_layout = array(
                 'metadata' => $data['metadata'],
                 'layout' => $this->renderPartial(LAYOUTS . $layout . '.php',  $data['content'], false)

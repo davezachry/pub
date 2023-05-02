@@ -1,0 +1,12 @@
+{
+    "data": {
+        "metadata": {
+            "meta_title": "Meta Title",
+            "meta_description": "Meta desccription goes here."
+        },
+        "content": {
+            "title": "404 Error",
+            "body": "This is a test."
+        }
+    }
+}

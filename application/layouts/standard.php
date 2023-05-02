@@ -1,7 +1,11 @@
 <h1><? echo $title; ?></h1>
-<? echo $body; ?>
+<?
+    if (isset($body)) {
+        echo $body;
+    }
+?>
 <?
     if (isset($faqs)) {
-        include MODULES . 'my_module.php';   
+        include MODULES . 'sample_module.php';   
     }
 ?>
