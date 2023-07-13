@@ -39,6 +39,24 @@ A simple PHP-based website framework.
   - The "content" node can cotain any number of children as single string values or nested nodes for more complex page content.
 - Optional nodes include "template" and "layout" which allows you to specify a unique layout or tempate for that page.
 
+### Sample Page JSON With All Options
+
+```
+{
+    "template": "alt_base",
+    "layout": "home",
+    "data": {
+        "metadata": {
+            "meta_title": "David Zachry - Designer, web developer, project planner, and manager.",
+            "meta_description": "David Zachry is a seasoned graphic designer and developer with experience in project planning and management."
+        },
+        "content": {
+            "title": "I'm a seasoned, multifaceted web/graphic designer and web developer with experience in ux and project/team management."
+        }
+    }
+}
+```
+
 ### The Future
 - The ultimate goal is to extened this into a bonified CMS with a visual interface for creating pages and content.
 
