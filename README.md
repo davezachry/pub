@@ -6,7 +6,7 @@ A simple PHP-based micro framework for making websites.
 
 ## Core Concepts
 
-- PHP vanilla templating for speed and flexibility.
+- PHP vanilla templates for speed and flexibility.
 - JSON based files for simple content creation and updates.
 - Automated routing based on page file structure.
 
