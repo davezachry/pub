@@ -1,6 +1,6 @@
 # PUB
 
-A simple PHP-based website micro framework.
+A simple PHP-based micro framework for making websites.
 
 ---
 
