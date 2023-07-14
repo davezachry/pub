@@ -36,7 +36,7 @@ A simple PHP-based micro framework for making websites.
 - Each page is JSON data structured as needed for each page.
 - The first required node is "metadata" which at minimum should contain "meta_title" and "meta_description".
 - The second required node is "content" which at minimum should containt a string of content.
-  - The "content" node can cotain any number of children as single string values or nested nodes for more complex page content.
+  - The "content" node can contain any number of children as single string values or nested nodes for more complex page content.
 - Optional nodes include "template" and "layout" which allows you to specify a unique layout or tempate for that page.
 
 ### Sample Page JSON With All Options
