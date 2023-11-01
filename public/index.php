@@ -6,9 +6,8 @@
     define('MODULES', __DIR__ . '/../application/modules/');
 
     require_once (ENGINE . 'pub.php');
-
     use Pub\Pub;
-    $pub = new Pub();
 
+    $pub = new Pub();
     $pub->findPage($_SERVER['REQUEST_URI']);
 ?>
