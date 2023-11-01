@@ -1,11 +1,10 @@
-<h1><? echo $title; ?></h1>
 <?
-    if (isset($body)) {
-        echo $body;
+    if (isset($title)) {
+        echo '<h1>' . $title . '</h1>';
     }
 ?>
 <?
-    if (isset($faqs)) {
-        include MODULES . 'sample_module.php';   
+    if (isset($body)) {
+        echo $body;
     }
 ?>
