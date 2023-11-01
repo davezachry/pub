@@ -1,0 +1,12 @@
+{
+    "data": {
+        "metadata": {
+            "meta_title": "Meta Title",
+            "meta_description": "Meta desccription goes here."
+        },
+        "content": {
+            "title": "Standard Title Field",
+            "body": "Standard short text content field that can be used for content."
+        }
+    }
+}
