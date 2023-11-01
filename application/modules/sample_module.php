@@ -1,7 +1,8 @@
+<!-- SIMPLE EXAMPLE MODULE -->
 <ul>
     <?
         foreach($faqs as $faq) {
-            echo '<li>' . $faq['question'] . ' ' . $faq['answer'];
+            echo '<li><strong>' . $faq['question'] . '</strong> ' . $faq['answer'] . '</li>';
         }
     ?>
 </ul>
