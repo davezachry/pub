@@ -15,10 +15,12 @@ A simple PHP-based micro framework for making websites.
   - Default is the base.php template. Additional templates can be created and utilized at the page level.
 - Layouts - The layouts for various page types within the website.
   - Default is the standard.php layout for the most common pages. Additional layouts can be created and utilized at the page level.
-- Modules - A place to create more granular modules for use with in layouts that would be shared across various layouts and pages.
-  - No default modules availible. Purely there if you need it or don't.
+- Components - A place to create more granular components (e.g. FAQ component, personal quote component, image gallery component, etc...) for use with in layouts that would be shared across various layouts and pages.
+  - No default elements. It's purely there if you need it or don't.
 - Pages - Where all website content is stored in the format of JSON files.
   - Default or system pages include the Home page (index.json) and the 404 page (fourohfour.json).
+- Models - Where content model definitions go for use with the GUI CMS to create new pages.
+  - Not in use at this time, but here as a placeholder for future development.
 
 ## Page File Format and Structure
 
@@ -45,6 +47,7 @@ A simple PHP-based micro framework for making websites.
 {
     "template": "alt_base",
     "layout": "home",
+    "model": "standard",
     "data": {
         "metadata": {
             "meta_title": "David Zachry - Designer, web developer, project planner, and manager.",
