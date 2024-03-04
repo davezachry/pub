@@ -26,13 +26,11 @@ A simple PHP-based micro framework for making websites.
 
 ### Page File Structure
 - URLs align with the naming of the page files.
-  - Example: /about = /pages/about.json
-- Page files can be structured within directories.
-  - Example: /about/the-team = /pages/about/the-team.json
-- The home page of the website is always index.json in the root of the page directory.
-  - Example: / = /pages/index.json
-- If there is a directory and you would like there to be a page at it's index, then you will need to create an index.json inside of that file.
   - Example: /about = /pages/about/index.json
+- Page files can be structured within directories.
+  - Example: /about/the-team = /pages/about/the-team/index.json
+- The home page of the website is always index.json in the root of the page directory.
+  - Example: / = /pages/home/index.json
 
 ### Page File Format
 - Each page is JSON data structured as needed for each page.
