@@ -1,4 +1,4 @@
-# PUB
+# Pub
 
 A simple PHP-based micro framework for making websites.
 
@@ -11,6 +11,8 @@ A simple PHP-based micro framework for making websites.
 - Automated routing based on page file structure.
 
 ## Directory Structure
+Everything needed to run Pub is contained in the "application" directory. Below details what's inside.
+
 - Templates - The global templates for layouts and pages. Typically contains shared elements across the website.
   - Default is the base.php template. Additional templates can be created and utilized at the page level.
 - Layouts - The layouts for various page types within the website.
@@ -58,6 +60,13 @@ A simple PHP-based micro framework for making websites.
     }
 }
 ```
+### Installation and Setup
+
+## Installation
+Download the repo and upload the "application" folder and all it's content to your web server just outside of the public web root.
+
+## Setup
+Download the "index.php" and the ".htaccess" files in the "public" folder and upload them to your public web root. Depending on your web server, you may need to handle URL rewrites diffently. If that's the case, then you may not need the ".htaccess" file.
 
 ### The Future
 - The ultimate goal is to extened this into a bonified CMS with a visual interface for creating pages and content.
