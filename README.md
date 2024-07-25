@@ -60,13 +60,11 @@ Everything needed to run Pub is contained in the "application" directory. Below 
     }
 }
 ```
-### Installation and Setup
+## Installation and Setup
 
-## Installation
-Download the repo and upload the "application" folder and all it's content to your web server just outside of the public web root.
-
-## Setup
-Download the "index.php" and the ".htaccess" files in the "public" folder and upload them to your public web root. Depending on your web server, you may need to handle URL rewrites diffently. If that's the case, then you may not need the ".htaccess" file.
+### Installation
+- Download the repo and upload the "application" folder and all it's content to your web server just outside of the public web root.
+- Download the "index.php" and the ".htaccess" files in the "public" folder and upload them to your public web root. Depending on your web server, you may need to handle URL rewrites diffently. If that's the case, then you may not need the ".htaccess" file.
 
 ### The Future
 - The ultimate goal is to extened this into a bonified CMS with a visual interface for creating pages and content.
