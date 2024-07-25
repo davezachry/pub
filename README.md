@@ -29,8 +29,9 @@ A simple PHP-based micro framework for making websites.
   - Example: /about = /pages/about/index.json
 - Page files can be structured within directories.
   - Example: /about/the-team = /pages/about/the-team/index.json
-- The home page of the website is always index.json in the root of the page directory.
-  - Example: / = /pages/home/index.json
+- The home page and 404 page of the website are present by default.
+  - Home = /pages/home/index.json
+  - 404 = /pages/fourohfour/index.json
 
 ### Page File Format
 - Each page is JSON data structured as needed for each page.
