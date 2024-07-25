@@ -18,7 +18,7 @@ A simple PHP-based micro framework for making websites.
 - Components - A place to create more granular components (e.g. FAQ component, personal quote component, image gallery component, etc...) for use with in layouts that would be shared across various layouts and pages.
   - No default elements. It's purely there if you need it or don't.
 - Pages - Where all website content is stored in the format of JSON files.
-  - Default or system pages include the Home page (index.json) and the 404 page (fourohfour.json).
+  - Default or system pages include the Home page and the 404 page.
 - Models - Where content model definitions go for use with the GUI CMS to create new pages.
   - Not in use at this time, but here as a placeholder for future development.
 
