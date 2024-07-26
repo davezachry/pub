@@ -1,4 +1,7 @@
 {
+    "template": "base",
+    "layout": "standard",
+    "model": "standard",
     "data": {
         "metadata": {
             "meta_title": "Meta Title",
