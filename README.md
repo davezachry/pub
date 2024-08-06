@@ -74,3 +74,6 @@ I've been working on websites for nearly 25 years and have worked in the majorit
 
 ### Why PUB?
 The abbreviation pub evokes two things for me as I've begun this development work. Firstly, the concept of publishing content which is at the heart of the web. And secondly, enjoying a refreshing beer at your local pub where there's no stress or worries. Who wouldn't want that?
+
+### Who's Behind This?
+My name is David Zachry and I've been doing web development for over 25 years. I have a love / hate relationship with frameworks and content management systems. So I thought it was time to put my money where my mouth is :)
