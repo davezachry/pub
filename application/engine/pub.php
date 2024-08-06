@@ -8,8 +8,8 @@
 
         /* INITIALIZATION */
         function __construct() {
-            $this->home_page = PAGES . '/index.json';
-            $this->fourohfour_page = PAGES . '/fourohfour.json';
+            $this->home_page = PAGES . '/home/index.json';
+            $this->fourohfour_page = PAGES . '/fourohfour/index.json';
         }
 
         /* METHODS */

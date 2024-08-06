@@ -4,8 +4,8 @@
     "model": "standard",
     "data": {
         "metadata": {
-            "meta_title": "Meta Title",
-            "meta_description": "Meta desccription goes here."
+            "meta_title": "Simple Content Page",
+            "meta_description": "This is an example of a simple content page."
         },
         "content": {
             "title": "Standard Title Field",
